@@ -22,7 +22,7 @@ jobs:
           name: octomatch
           path: website
           run-id: ${{ github.event.workflow_run.id }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Deploy to production
         run: |
