@@ -27,6 +27,7 @@ jobs:
           path: dist
   dev:
     name: Deploy dev
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v8
